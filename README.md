@@ -1,4 +1,4 @@
-# promise-utils
+# q-promise-utils
 
 Several utils for simpifying interaction with multiple async operations.
 

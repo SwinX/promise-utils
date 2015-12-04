@@ -1,6 +1,6 @@
 {
-  "name": "promise-utils",
-  "version": "0.0.1",
+  "name": "q-promise-utils",
+  "version": "1.0.0",
   "description": "Several promise helpers simplifying interaction with multiple async operations",
   "main": "lib/utils.js",
   "dependencies": {
@@ -25,7 +25,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/SwinX/promise-utils"
+    "url": "https://github.com/SwinX/q-promise-utils"
   },
   "keywords": [
     "q",
@@ -37,7 +37,7 @@
     "waitForResults"
   ],
   "bugs": {
-    "url": "https://github.com/SwinX/promise-utils/issues"
+    "url": "https://github.com/SwinX/q-promise-utils/issues"
   },
-  "homepage": "https://github.com/SwinX/promise-utils"
+  "homepage": "https://github.com/SwinX/q-promise-utils"
 }
