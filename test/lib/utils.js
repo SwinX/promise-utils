@@ -22,6 +22,15 @@ describe('utils', function() {
                         .and.to.have.been.calledBefore(second);
                 });
         });
+
+        it('should pass args to functions', function() {
+            var fn = sinon.stub().named('fn');
+
+            return utils.sequence([fn], 'arg1', 'arg2')
+                .then(function() {
+                    expect(fn).to.have.been.calledWith('arg1', 'arg2');
+                });
+        });
     });
 
     describe('seqMap', function() {

@@ -4,19 +4,24 @@ Several utils for simpifying interaction with multiple async operations.
 
 ## API
 
-### utils.sequence(funcs)
+### utils.sequence(funcs, [args])
 
-Executes `funcs` in async manner one by one. 
+Executes `funcs` in async manner one by one.
+Arguments:
+* funcs - functions to execute
+* args (optional) - arguments to pass to each function
 
 Example:
 
 ```js
 var foo = function() {},
     bar = function() {};
-    
-utils.sequence([foo, bar])
+
+utils.sequence([foo, bar], 'some-string', 100500)
     .then(function() {
-        //first executed `foo`, next `bar`, then arrives to this code block
+        // first executed `foo('some-string', 100500)`,
+        // then `bar('some-string', 100500)`,
+        // then arrives to this code block
     });
 ```
 
@@ -32,7 +37,7 @@ var items = ['foo', 'bar'],
 
 utils.seqMap(items, callback)
     .then(function() {
-        //first runs `callback` with arg `foo`, then with arg `bar`, next arrives to this code block  
+        //first runs `callback` with arg `foo`, then with arg `bar`, next arrives to this code block
     });
 ```
 
