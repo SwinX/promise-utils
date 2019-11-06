@@ -4,7 +4,7 @@
   "description": "Several promise helpers simplifying interaction with multiple async operations",
   "main": "lib/utils.js",
   "dependencies": {
-    "lodash": "^3.10.1",
+    "lodash": "^4.17.15",
     "q": "^1.4.1"
   },
   "devDependencies": {
